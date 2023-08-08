@@ -33,19 +33,15 @@ function App() {
     fetchData();
   }, []);
 
-  if (isLoading) {
-    return <h1>Loading ...</h1>;
-  }
-
-  if (error) {
-    return <h1>Error: {error}</h1>;
-  }
   return (
     <BrowserRouter>
       <UserContext.Provider value={{ users, setUsers }}>
         <>
           <Routes>
-            <Route path="/" element={<MainLayout />}>
+            <Route
+              path="/"
+              element={<MainLayout isLoading={isLoading} error={error} />}
+            >
               <Route index element={<Home />} />
               <Route path="users" element={<Users />} />
               <Route path="users/:username" element={<User />} />
