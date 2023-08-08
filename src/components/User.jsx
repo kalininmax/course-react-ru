@@ -7,7 +7,7 @@ const User = () => {
   const params = useParams();
   const { users } = useContext(UserContext);
 
-  const user = users.find((user) => user.nickname === params.nickname);
+  const user = users.find((user) => user.username === params.username);
 
   return (
     <>
