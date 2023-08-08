@@ -1,0 +1,12 @@
+.user tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.user td {
+  text-align: left;
+}
+.user th {
+  text-align: right;
+}

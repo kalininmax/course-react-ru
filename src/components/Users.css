@@ -1,0 +1,17 @@
+.users {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.users a {
+  display: flex;
+  padding: 5px;
+  color: currentColor;
+  gap: 0.4ch;
+  border: 1px solid #213547;
+}
+
+.users li:not(:first-child) a {
+  border-top: 0;
+}

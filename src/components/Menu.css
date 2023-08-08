@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: currentColor;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 20px 15px;
+  color: white;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: #1e2f3f;
+}
+
+.menu a[aria-current='page'] {
+  background-color: #1a2937;
+}
