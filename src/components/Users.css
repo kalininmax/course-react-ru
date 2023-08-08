@@ -5,11 +5,18 @@
 }
 
 .users a {
-  display: flex;
+  display: block;
   padding: 5px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
   color: currentColor;
   gap: 0.4ch;
   border: 1px solid #213547;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
 }
 
 .users li:not(:first-child) a {
